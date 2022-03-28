@@ -5,7 +5,7 @@ interface Props {
     marginBottom?: number
 }
 
-export const AtomSubtitle = ({ text, marginBottom = 16 }: Props) => {
+export const AtomDetailParagraph = ({ text, marginBottom = 30 }: Props) => {
     return (
         <Text marginBottom={marginBottom}>{ text }</Text>
     )

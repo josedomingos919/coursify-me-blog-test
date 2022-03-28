@@ -4,7 +4,8 @@ import { useSelector } from '../../../store/hookTypes';
 import { getPost } from '../../../store/reducers/post/actions'; 
 import { OrganismCategoryBar } from '../../components/organism/categoryBar';
 import { OrganismHeader } from '../../components/organism/header';
-import { Container } from './styles';
+import { OrganismListPosts } from '../../components/organism/listPosts';
+import { Container, ScrollView } from './styles'; 
 
 export function Home () {
     const dispatch = useDispatch();
@@ -13,7 +14,13 @@ export function Home () {
     return ( 
         <Container>
             <OrganismHeader /> 
-            <OrganismCategoryBar />
+
+            <ScrollView> 
+                <OrganismCategoryBar title='CURSOS ONLINE' />
+                <OrganismListPosts />
+                <OrganismCategoryBar title='CURSOS ONLINE' />
+                <OrganismListPosts />
+            </ScrollView>
         </Container>
     )
 }

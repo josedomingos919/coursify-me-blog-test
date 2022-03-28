@@ -2,10 +2,14 @@
 import { MoleculeCategoryBar } from "../../molecule/categoryBar"
 import { Container } from "./style"
 
-export const OrganismCategoryBar = () => {
+type Props = {
+    title: string
+}
+
+export const OrganismCategoryBar = ({ title }:Props) => {
     return (
         <Container> 
-            <MoleculeCategoryBar />
+            <MoleculeCategoryBar title={title} />
         </Container>
     )
 }

@@ -1,3 +1,4 @@
+import { RootStackParamList } from '../routes/root.routes';
 
 declare module '*.svg?inline' {
     const content: any
@@ -19,3 +20,9 @@ declare module '*.jpg' {
     export default content
 }
 
+
+declare global {
+  namespace ReactNavigation {
+    interface RootParamList extends RootStackParamList {}
+  }
+}

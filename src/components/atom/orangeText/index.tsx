@@ -1,11 +1,15 @@
+import { TouchableOpacity } from "react-native"
 import { Text } from "./style"
 
 type Props = {
-    text: string
+    text: string,
+    onPress?: ()=> void
 }
-
-export const AtomOrangeText= ({ text }: Props) => {
+ 
+export const AtomOrangeText= ({ text, onPress }: Props) => {
     return (
-        <Text>{ text }</Text>
+        <TouchableOpacity onPress={onPress}>
+            <Text>{ text }</Text>
+        </TouchableOpacity>
     )
-}
+} 

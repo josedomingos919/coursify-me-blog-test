@@ -4,7 +4,8 @@ import { OrganismCategoryBar } from '../../components/organism/categoryBar';
 import { OrganismFooter } from '../../components/organism/footer';
 import { OrganismHeader } from '../../components/organism/header';
 import { OrganismListPosts } from '../../components/organism/listPosts';
-import { Container, ScrollView } from './styles'; 
+import { Container, ScrollView } from './styles';
+ 
 
 export function Home () {
     const dispatch = useDispatch();
